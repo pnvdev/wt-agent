@@ -1,5 +1,5 @@
 {
-  "name": "@pnvdev/wt-agent",
+  "name": "wt-agent",
   "version": "1.0.0",
   "description": "Agentic CLI for managing Git Worktrees deterministically",
   "main": "dist/index.js",
