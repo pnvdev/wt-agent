@@ -1,0 +1,24 @@
+{
+  "name": "wt-agent",
+  "version": "1.0.0",
+  "description": "Agentic CLI for managing Git Worktrees deterministically",
+  "main": "dist/index.js",
+  "bin": {
+    "wt-agent": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "vitest run src/"
+  },
+  "dependencies": {
+    "commander": "^11.0.0",
+    "prompts": "^2.4.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/prompts": "^2.4.9",
+    "typescript": "^5.0.0",
+    "vitest": "^4.0.18"
+  }
+}
