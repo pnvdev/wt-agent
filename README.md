@@ -16,7 +16,15 @@ By leveraging Git worktrees under the hood, `wt-agent` allows multiple agents to
 *   **Garbage Collection (`gc`):** Automatically finds and deletes worktrees whose branches have already been merged into `main`.
 *   **Interactive Mode:** Includes a human-friendly interactive prompt interface using `wt-agent interactive` (`wt-agent i`).
 
-## 🚀 Installation & Build
+## 🚀 Quick Start (npx)
+
+You can run the CLI directly without any installation using `npx` via the `@pnvdev` scope:
+
+```bash
+npx --yes @pnvdev/wt-agent --help
+```
+
+## 🛠️ Local Installation & Build
 
 Ensure you have Node.js (>= 18) installed.
 
