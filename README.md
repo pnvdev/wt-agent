@@ -46,7 +46,7 @@ npm run build
 
 ### Creating a Worktree
 ```bash
-npx wt-agent create feature/auth-login --base main --isolate-deps
+npx @pnvdev/wt-agent create feature/auth-login --base main --isolate-deps
 ```
 *Output:*
 ```json
@@ -60,7 +60,7 @@ npx wt-agent create feature/auth-login --base main --isolate-deps
 
 ### Checking Status (Conflict Resolution)
 ```bash
-npx wt-agent status feature/auth-login
+npx @pnvdev/wt-agent status feature/auth-login
 ```
 *Output:*
 ```json
@@ -79,24 +79,24 @@ npx wt-agent status feature/auth-login
 ### System Checkpoints (Trial & Error)
 Agents can snapshot their work before a risky refactor.
 ```bash
-npx wt-agent checkpoint-save feature/auth-login "Before updating React router"
+npx @pnvdev/wt-agent checkpoint-save feature/auth-login "Before updating React router"
 ```
 If the refactor fails the tests:
 ```bash
-npx wt-agent checkpoint-restore feature/auth-login
+npx @pnvdev/wt-agent checkpoint-restore feature/auth-login
 ```
 
 ### Agent Handoff & Context
 Agents can leave context for other agents taking over the task.
 ```bash
-npx wt-agent context-set feature/auth-login "Goal: Fix UI padding"
-npx wt-agent handoff feature/auth-login frontend-agent-id-123
+npx @pnvdev/wt-agent context-set feature/auth-login "Goal: Fix UI padding"
+npx @pnvdev/wt-agent handoff feature/auth-login frontend-agent-id-123
 ```
 
 ### Dynamic Port Leasing
 Allocate a unique port for a dev server to avoid collisions with other agents.
 ```bash
-npx wt-agent port-request feature/auth-login
+npx @pnvdev/wt-agent port-request feature/auth-login
 ```
 *Output:*
 ```json
@@ -111,7 +111,7 @@ npx wt-agent port-request feature/auth-login
 ### Garbage Collection
 Clean up disk space by removing worktrees that are already merged.
 ```bash
-npx wt-agent gc --base main
+npx @pnvdev/wt-agent gc --base main
 ```
 
 ## 🧑‍💻 Usage (Interactive Mode for Humans)
@@ -119,9 +119,9 @@ npx wt-agent gc --base main
 If you want to use the tool as a human developer without typing the commands, simply run:
 
 ```bash
-npx wt-agent interactive
+npx @pnvdev/wt-agent interactive
 # or
-npx wt-agent i
+npx @pnvdev/wt-agent i
 ```
 
 This will launch a prompt interface allowing you to navigate, create, sync, and delete worktrees easily.

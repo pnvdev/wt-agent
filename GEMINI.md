@@ -29,7 +29,7 @@ The project uses a standard Node.js and TypeScript toolchain.
     ```
 *   **Run the CLI (Production/Compiled):**
     ```bash
-    npx wt-agent [command] [options]
+    npx @pnvdev/wt-agent [command] [options]
     ```
 
 ### Available Commands:
